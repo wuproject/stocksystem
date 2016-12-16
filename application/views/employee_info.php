@@ -54,7 +54,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								<div class="clear"></div>
 							</ul>
 							 <ul>
-								 <li class="text-info">Email ID *</li>
+								 <li class="text-info">Email *</li>
 								 <li><input type="text" name="email" placeholder="" required></li>
 								 <div class="clear"></div>
 							 </ul>
@@ -96,9 +96,6 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					       </ul>
                   <div class="clear"></div>					
 				<div class="agile-submit">
-                 <?php echo "<input type=\"Submit\" name=\"add\" value=\"เพิ่ม\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"delete\" value=\"ลบ\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"edit\" value=\"แก้ไข\">";?>
                  <?php echo "<input type=\"Submit\" name=\"save\" value=\"บันทึก\">";?>
                  <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>				
 		  </div>

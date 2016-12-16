@@ -41,12 +41,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
                     <th width="36" height="25" scope="col">No.</th>
 			        <th width="67" scope="col">รหัสบริษัท</th> 
                     <th width="134" scope="col">ชื่อบริษัท</th>
-			        <th width="137" scope="col">ชื่อสินค้า</th>
-			        <th width="164" scope="col">ที่อยู่</th>
+                    <th width="164" scope="col">ที่อยู่</th>
+                    <th width="164" scope="col">สาขา</th>		        
                     <th width="130" scope="col">Phone Number</th>
-			        <th width="198" scope="col">Email </th>
-			        
-			        
+                    <th width="198" scope="col">เลขที่ผู้เสียภาษี </th>
+                    <th width="137" scope="col">ชื่อสินค้า</th>       
+			                
 		          </tr>
 		          <tr>
 			        <td>&nbsp;</td>
@@ -56,13 +56,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			        <td>&nbsp;</td>
 			        <td>&nbsp;</td>
 			        <td>&nbsp;</td>
-                    
+                    <td>&nbsp;</td>
 		          </tr>
 		       </table>           
 	        </li>
 		</ul>
         <div class="clear"></div>
-        <div class="agile-submit">               
+        <div class="agile-submit">         
+            <?php echo "<input type=\"Submit\" name=\"delete\" value=\"ลบ\">";?>
+            <?php echo "<input type=\"Submit\" name=\"edit\" value=\"แก้ไข\">";?>              
             <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>				
 			</div>
           </form>

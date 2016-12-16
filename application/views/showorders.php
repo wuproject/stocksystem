@@ -72,8 +72,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	        </li>
 		</ul>
         <div class="clear"></div>
-        <div class="agile-submit">               
-            <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>			</div>
+        <div class="agile-submit">   
+            <?php echo "<input type=\"Submit\" name=\"delete\" value=\"ลบ\">";?>
+            <?php echo "<input type=\"Submit\" name=\"edit\" value=\"แก้ไข\">";?>        
+            <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>			
+            </div>
 			</form>
 		</div>	
 	</div>

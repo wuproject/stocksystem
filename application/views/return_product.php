@@ -75,46 +75,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</ul>
 			
 			<div class="clear"></div>
-		  <div class="agile-submit">
-                 <?php echo "<input type=\"Submit\" name=\"add\" value=\"เพิ่ม\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"delete\" value=\"ลบ\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"edit\" value=\"แก้ไข\">";?>
+		  <div class="agile-submit">                 
                  <?php echo "<input type=\"Submit\" name=\"save\" value=\"บันทึก\">";?>
                  <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>
 		  </div>        			
-			 <ul>
-			  <li>
-			   <table width="973" border="1">
-			      <tr>
-                    <th width="30" scope="col">No.</th>
-			        <th width="104" scope="col">รหัสใบคืนสินค้า</th> 
-                    <th width="77" scope="col">รหัสสินค้า</th>
-			        <th width="171" scope="col">ชื่อสินค้า</th>
-			        <th width="124" scope="col">วันที่คืนสินค้า</th>
-                    <th width="113" scope="col">วันที่รับสินค้า</th>
-			        <th width="160" scope="col">จำนวน</th>
-                    <th width="49" scope="col">ราคา</th>
-			        <th width="87" scope="col">ยอดรวมราคา</th> 
-                    <th width="49" scope="col">รหัสบริษัท</th>
-			        <th width="87" scope="col">ชื่อบริษัท</th>      
-			        
-		          </tr>
-		          <tr>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-		          </tr>
-		       </table>      
-	        </li>
-		</ul>
+			
           </form>
 		</div>	
 	</div>

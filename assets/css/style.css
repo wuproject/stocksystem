@@ -328,9 +328,9 @@ li#menu-academico{
     display: inline-block;
 }
 .w3layouts-left {
-    float: left;
+    float: right;
     width: 24.25%;
-    background: #ff9501;
+    background: #3E32F4;
     padding: 1em;
 }
 .profile_details {
@@ -5216,7 +5216,7 @@ hr {
     width: 78%;
 }
 .w3layouts-left {
-    padding: 0.73em;
+    padding: 0.3em;
 }
 li.dropdown.head-dpdn a.dropdown-toggle {
     margin: 1em 0.7em;

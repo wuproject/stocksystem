@@ -40,13 +40,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			    <table width="881" border="1">
 			      <tr>
                     <th width="26" scope="col">No.</th>
+                    <th width="149" scope="col">ชื่อบริษัท</th>
+                    <th width="97" scope="col">ประเภท</th>
 			        <th width="69" scope="col">รหัสสินค้า</th>
-			        <th width="146" scope="col">ชื่อสินค้า</th>
-			        <th width="97" scope="col">ประเภท</th>
-                    <th width="70" scope="col">ราคา</th>
-			        <th width="83" scope="col">จำนวนสินค้่า</th>
-			        <th width="149" scope="col">ชื่อบริษัท</th>
-			        <th width="89" scope="col">ราคาต้นทุน</th>
+			        <th width="146" scope="col">ชื่อสินค้า</th>			        
+                    <th width="89" scope="col">ราคาต้นทุน</th>
+                    <th width="70" scope="col">ราคาต่อชิ้น</th>
+			        <th width="83" scope="col">จำนวนสินค้่า</th>	        
                     <th width="94" scope="col">สินค้าคงเหลือ</th>
 		          </tr>
 		          <tr>
@@ -63,7 +63,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		       </table>           
 	        </li>
 		</ul>
-        <div class="agile-submit">               
+        <div class="agile-submit">    
+           <?php echo "<input type=\"Submit\" name=\"delete\" value=\"ลบ\">";?>
+           <?php echo "<input type=\"Submit\" name=\"edit\" value=\"แก้ไข\">";?>           
            <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>     				
 		  </div>
 

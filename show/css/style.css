@@ -58,7 +58,8 @@ body{
     width: 60%;
     font-family: 'Roboto', sans-serif;
     margin: 8px auto 0px;
-    background: rgba(0, 0, 0, 0.71);;
+    background: rgba(220, 218, 232, 0.71);
+
 }
 form {
     padding: 52px 8px 30px 8px;
@@ -117,10 +118,10 @@ li.text {
     -ms-transition: 0.5s all;
 }
 .agile-submit input[type="submit"]{
-	background:#e1306c;
+	background:#6E6E6F;
 }
 .agile-submit input[type="submit"]:hover {
-    background:rgba(225, 48, 108, 0.72);
+    background:rgba(144, 145, 247, 0.72);
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-o-transition:0.5s all;

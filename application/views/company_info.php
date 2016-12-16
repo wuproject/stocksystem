@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>ข้อมูลการคืนสินค้าxxxx</title>
+<title>ข้อมูลบริษัทคู่ค้า</title>
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -41,51 +41,38 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	         <li class="text">ชื่อบริษัท  :  </li>
 				<li><input name="comp_name" type="text" required></li>
 		    </ul>
+            
             <ul>
 				<li class="text">ที่อยู่  :  </li>
 				<li><textarea></textarea></li>
 			</ul>
+            <ul>
+				<li class="text">สาขา  :  </li>
+				<li><input name="branch" type="text" required></li>
+		  </ul>
           <ul>
 				<li class="text">Phone Number *:</li>
                 <li><input name="phone" type="text" required></li>
 		  </ul>
+          <ul>
+				<li class="text">Fax :</li>
+                <li><input name="Fax" type="text" required></li>
+		  </ul>
 			<ul>
-			  <li class="text">Email  *  :  </li>
-				<li><input name="E-mail" type="text" required></li>
+			  <li class="text">เลขที่ผู้เสียภาษี    :  </li>
+				<li><input name="Vat" type="text" required></li>
+			</ul>
+            <ul>
+				<li class="text">สินค้า  :  </li>
+				<li><input name="produck" type="text" required></li>
 			</ul>
 
 			<div class="clear"></div>
-		  <div class="agile-submit">
-                 <?php echo "<input type=\"Submit\" name=\"add\" value=\"เพิ่ม\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"delete\" value=\"ลบ\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"edit\" value=\"แก้ไข\">";?>
+		  <div class="agile-submit">                 
                  <?php echo "<input type=\"Submit\" name=\"save\" value=\"บันทึก\">";?>
                  <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>
 		  </div>
-			 <ul>
-			  <li>
-			    <table width="849" border="1">
-			      <tr>
-                    <th width="45" height="24" scope="col">No.</th>
-			        <th width="67" scope="col">รหัสบริษัท</th>
-                    <th width="168" scope="col">ชื่อบริษัท</th>
-			        <th width="227" scope="col">ที่อยู่</th>
-                    <th width="137" scope="col">Phone Number </th>
-			        <th width="165" scope="col">Email </th>
-
-
-		          </tr>
-		          <tr>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-		          </tr>
-		       </table>
-	        </li>
-		</ul>
+			 
           </form>
 		</div>
 	</div>

@@ -32,78 +32,57 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<div class="agileits-main">
 		<div class="wrap">
 		<form action="#" method="post">
+            <ul>
+			  <li class="text">ชื่อบริษัท*  :  </li>
+				<li><input name="comp_name" type="text" required></li>
+			</ul>
+            <ul>	
+			    <li class="text">ประเภท*  :  </li>
+				<li class="se"><select class="time-dropdown form-dropdown validate[required, limitDate]" id="min_15" name="q15_departureDatetime15[min]">
+									<option>  </option>
+									<option value="1">ข้อต่อสายไฮดรอลิค</option>
+									<option value="2">สายไฮดรอลิค</option>
+									<option value="3">สายสปริงไฮดรอลิค</option>
+									<option value="4">ปลอกสายไฮดรอลิค</option>
+                                    <option value="5">สายสแตนเลสไฮดรอลิค</option>
+								  </select></li>
+            </ul>
 			<ul>
 			  
-		      <li class="text">รหัสสินค้า  :  </li>
+		      <li class="text">รหัสสินค้า*  :  </li>
 				<li><input name="product_id" type="text" required></li>
 			</ul>
 			<ul>
 			  
-			  <li class="text">ชื่อสินค้า  :  </li>
+			  <li class="text">ชื่อสินค้า*  :  </li>
 				<li><input name="product_name" type="text" required></li>
 			</ul>
-			<ul>	
-			    <li class="text">ประเภท  :  </li>
-				<li><input name="sort" type="text" required></li>
-            </ul>
+			<ul>
+				<li class="text">ราคาต้นทุน*  :  </li>
+				<li><input name="cost" type="text" required></li>
+			</ul>
             <ul>
-				<li class="text">ราคา  :  </li>
+				<li class="text">ราคาต่อชิ้น * :  </li>
 				<li><input name="value" type="text" required></li>
 			</ul>
 			<ul>
-                <li class="text">จำนวนสินค้า  :  </li>
+                <li class="text">จำนวนสินค้า*  :  </li>
 				<li><input name="num" type="text" required></li>
-			</ul>
+			</ul>		
+			
 			<ul>
-			  <li class="text">ชื่อบริษัท  :  </li>
-				<li><input name="comp_name" type="text" required></li>
-			</ul>
-			<ul>
-				<li class="text">ราคาต้นทุน  :  </li>
-				<li><input name="cost" type="text" required></li>
-			</ul>
-			<ul>
-				<li class="text">สินค้าคงเหลือ  :  </li>
+				<li class="text">สินค้าคงเหลือ*  :  </li>
 				<li><input name="inventories" type="text" required></li>
 			</ul>
             <div class="clear"></div>
 		  <div class="agile-submit">
-                 <?php echo "<input type=\"Submit\" name=\"add\" value=\"เพิ่ม\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"delete\" value=\"ลบ\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"edit\" value=\"แก้ไข\">";?>
+                 
                  <?php echo "<input type=\"Submit\" name=\"save\" value=\"บันทึก\">";?>
                  <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>				
 			</div>
             	<br>		
 			
-		    <ul>
-			  <li>
-			    <table width="850" border="1">
-			      <tr>
-                    <th width="28" scope="col">No.</th>
-			        <th width="73" scope="col">รหัสสินค้า</th>
-			        <th width="217" scope="col">ชื่อสินค้า</th>
-			        <th width="136" scope="col">ประเภท</th>
-                    <th width="82" scope="col">ราคา</th>
-			        <th width="64" scope="col">จำนวนสินค้่</th>
-			        <th width="204" scope="col">บริษัท</th>
-			        <th width="82" scope="col">ราคาต้นทุน</th>
-                    <th width="82" scope="col">สินค้าคงเหลือ</th>
-		          </tr>
-		          <tr>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-		          </tr>
-		       </table>           
-	        </li>
-		</ul>
+		    
 		</form>
 		</div>	
 	</div>

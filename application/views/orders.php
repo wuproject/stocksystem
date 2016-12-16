@@ -84,50 +84,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			
 			<div class="clear"></div>
 		  <div class="agile-submit">
-                 <?php echo "<input type=\"Submit\" name=\"add\" value=\"เพิ่ม\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"delete\" value=\"ลบ\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"edit\" value=\"แก้ไข\">";?>
+                 
                  <?php echo "<input type=\"Submit\" name=\"save\" value=\"บันทึก\">";?>
                  <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>				
 			</div>
-            	<br>		
-			
-		    <ul>
-			  <li>
-			    <table width="1082" height="78" border="1">
-			      <tr>
-                    <th width="24" height="42" scope="col">No.</th>
-			        <th width="84" scope="col">รหัสใบสั่งซื้อ</th> 
-                    <th width="66" scope="col">รหัสสินค้า</th>
-                    <th width="64" scope="col">ชื่อสินค้า</th>
-                    <th width="83" scope="col">รหัสพนักงาน</th>
-                    <th width="87" scope="col">ชื่อพนักงาน</th>
-                    <th width="67" scope="col">รหัสบริษัท</th>
-			        <th width="48" scope="col">บริษัท</th>
-			        <th width="108" scope="col">สถานะการสั่งซื้อ</th>
-                    <th width="114" scope="col">วันที่สั่งซื้อสินค้า</th>
-			        <th width="84" scope="col">วันที่รับสินค้า</th>
-			        <th width="84" scope="col">จำนวนสั่งซื้อ</th>
-			        <th width="87" scope="col">ยอดรวมราคา</th>
-		          </tr>
-		          <tr>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-			        <td>&nbsp;</td>
-		          </tr>
-		       </table>           
-	        </li>
-		</ul>
+            
 			</form>
 		</div>	
 	</div>
