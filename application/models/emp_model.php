@@ -70,9 +70,9 @@ echo $sql;
 }*/
 
 public function inspro(){
-  $sql = "INSERT INTO product (Cpn_name,P_id,P_sort,P_name,P_pice,P_quantity,P_cost,P_inventory)
-          VALUES ('".$_POST["comp_name"]."','".$_POST["product_id"]."','".$_POST["category"]."','".$_POST["product_name"]."','".$_POST["cost"]."',
-          '".$_POST["value"]."','".$_POST["num"]."','".$_POST["inventories"]."')";
+  $sql = "INSERT INTO product (P_id,Cpn_name,P_sort,P_name,P_price,P_quantity,P_cost,P_inventory)
+          VALUES ('".$_POST["product_id"]."','".$_POST["comp_name"]."','".$_POST["category"]."','".$_POST["product_name"]."','".$_POST["pice"]."','".$_POST["num"]."','".$_POST["cost"]."',
+          '".$_POST["inventories"]."')";
 
 
 
@@ -87,12 +87,11 @@ echo $sql;
             //$_SESSION['login'] = 1;
             $this->session->set_userdata('P_id',$row->P_id);
             $this->session->set_userdata('Cpn_name',$row->Cpn_name);
+            $this->session->set_userdata('P_cost',$row->P_cost);
+            $this->session->set_userdata('P_quantity',$row->P_quantity);
             $this->session->set_userdata('P_sort',$row->P_sort);
             $this->session->set_userdata('P_name',$row->P_name);
-            $this->session->set_userdata('P_dest',$row->P_dest);
-            $this->session->set_userdata('P_pice',$row->P_pice);
-            $this->session->set_userdata('P_quantity',$row->P_quantity);
-            $this->session->set_userdata('P_cost',$row->P_cost);
+            $this->session->set_userdata('P_price',$row->P_price);
             $this->session->set_userdata('P_inventory',$row->P_inventory);
 
 

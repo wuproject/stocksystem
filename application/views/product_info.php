@@ -63,7 +63,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</ul>
             <ul>
 				<li class="text">ราคาต่อชิ้น * :  </li>
-				<li><input name="value" type="text" required></li>
+				<li><input name="pice" type="text" required></li>
 			</ul>
 			<ul>
                 <li class="text">จำนวนสินค้า*  :  </li>

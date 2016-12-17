@@ -9,6 +9,7 @@ class Employee extends CI_Controller {
 		//echo $sess_fname;
 		//$this->load->view('login_message');
 		$this->load->view('employee_info',$data);
+			$this->load->view('product_info');
 
 	}
 
@@ -89,9 +90,9 @@ class Employee extends CI_Controller {
 public function prod()
 {
 	$this->load->model("emp_model");
-	$em = $this->emp_model->inspro();
+	$this->emp_model->inspro();
 	$this->product->_save($Cpn_name['comp_name'],$P_id['product_id'],$P_sort['category'],$P_name['product_name'],$P_cost['cost']
-	,$P_pice['value'],$P_quantity['num'],$P_inventory['inventories']);
+	,$P_price['pice'],$P_quantity['num'],$P_inventory['inventories']);
 }
 
 			}
