@@ -11,7 +11,7 @@
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Sales Inquiry Form Responsive Widget Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="Sales Inquiry Form Responsive Widget Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -31,14 +31,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!--main-->
 	<div class="agileits-main">
 		<div class="wrap">
-		<form action="#" method="post">
+		<form  method="post" action="<?php echo site_url("employee/prod");?>">
             <ul>
 			  <li class="text">ชื่อบริษัท*  :  </li>
 				<li><input name="comp_name" type="text" required></li>
 			</ul>
-            <ul>	
+            <ul>
 			    <li class="text">ประเภท*  :  </li>
-				<li class="se"><select class="time-dropdown form-dropdown validate[required, limitDate]" id="min_15" name="q15_departureDatetime15[min]">
+				<li class="se"><select class="time-dropdown form-dropdown validate[required, limitDate]" id="min_15" name="category">
 									<option>  </option>
 									<option value="1">ข้อต่อสายไฮดรอลิค</option>
 									<option value="2">สายไฮดรอลิค</option>
@@ -48,12 +48,12 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 								  </select></li>
             </ul>
 			<ul>
-			  
+
 		      <li class="text">รหัสสินค้า*  :  </li>
 				<li><input name="product_id" type="text" required></li>
 			</ul>
 			<ul>
-			  
+
 			  <li class="text">ชื่อสินค้า*  :  </li>
 				<li><input name="product_name" type="text" required></li>
 			</ul>
@@ -68,23 +68,23 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<ul>
                 <li class="text">จำนวนสินค้า*  :  </li>
 				<li><input name="num" type="text" required></li>
-			</ul>		
-			
+			</ul>
+
 			<ul>
 				<li class="text">สินค้าคงเหลือ*  :  </li>
 				<li><input name="inventories" type="text" required></li>
 			</ul>
             <div class="clear"></div>
 		  <div class="agile-submit">
-                 
+
                  <?php echo "<input type=\"Submit\" name=\"save\" value=\"บันทึก\">";?>
-                 <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>				
+                 <?php echo "<input type=\"Submit\" name=\"back\" value=\"กลับไปหน้าแรก\">";?>
 			</div>
-            	<br>		
-			
-		    
+            	<br>
+
+
 		</form>
-		</div>	
+		</div>
 	</div>
 <!--//main-->
 <!--footer-->

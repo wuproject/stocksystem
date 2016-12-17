@@ -28,15 +28,15 @@ echo $sql;
                 //set session
                 //$_SESSION['username'] = $row->username;
                 //$_SESSION['login'] = 1;
-                $this->session->set_userdata('St_id');
-                $this->session->set_userdata('St_firstname');
-                $this->session->set_userdata('St_lastname');
-                $this->session->set_userdata('St_address');
-								$this->session->set_userdata('St_Email');
-								$this->session->set_userdata('St_mobile');
-								$this->session->set_userdata('St_position');
-								$this->session->set_userdata('St_mobile');
-								$this->session->set_userdata('St_mobile');
+                $this->session->set_userdata('St_id',$row->St_id);
+                $this->session->set_userdata('St_firstname',$row->St_firstname);
+                $this->session->set_userdata('St_lastname',$row->St_lastname);
+                $this->session->set_userdata('St_address',$row->St_address);
+								$this->session->set_userdata('St_Email',$row->St_Email);
+								$this->session->set_userdata('St_mobile',$row->St_mobile);
+								$this->session->set_userdata('St_position',$row->St_position);
+								$this->session->set_userdata('St_username',$row->St_username);
+								$this->session->set_userdata('St_password',$row->St_password);
 
 
 
@@ -61,13 +61,47 @@ echo $sql;
 }
 }*/
 
-public function getall()
+/*public function getall() โชว์สินค้า
 {
   $sql = "SELECT * FROM staff(St_id,St_firstname,St_lastname,St_address,St_Email,St_mobile,St_position,St_username,St_password)" ;
   $query = $this->db->query($sql)
                     ->result();
   print_r($query);
-}
+}*/
+
+public function inspro(){
+  $sql = "INSERT INTO product (Cpn_name,P_id,P_sort,P_name,P_pice,P_quantity,P_cost,P_inventory)
+          VALUES ('".$_POST["comp_name"]."','".$_POST["product_id"]."','".$_POST["category"]."','".$_POST["product_name"]."','".$_POST["cost"]."',
+          '".$_POST["value"]."','".$_POST["num"]."','".$_POST["inventories"]."')";
+
+
+
+echo $sql;
+    $query = $this->db->query($sql);
+
+
+
+    //foreach($query->result() as $row){
+            //set session
+            //$_SESSION['username'] = $row->username;
+            //$_SESSION['login'] = 1;
+            $this->session->set_userdata('P_id',$row->P_id);
+            $this->session->set_userdata('Cpn_name',$row->Cpn_name);
+            $this->session->set_userdata('P_sort',$row->P_sort);
+            $this->session->set_userdata('P_name',$row->P_name);
+            $this->session->set_userdata('P_dest',$row->P_dest);
+            $this->session->set_userdata('P_pice',$row->P_pice);
+            $this->session->set_userdata('P_quantity',$row->P_quantity);
+            $this->session->set_userdata('P_cost',$row->P_cost);
+            $this->session->set_userdata('P_inventory',$row->P_inventory);
+
+
+
+            $this->session->set_flashdata('msg_type', 'success');
+
+
+        }
+
 }
 
 ?>
